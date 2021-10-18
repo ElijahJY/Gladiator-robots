@@ -13,9 +13,11 @@ var playerMoney = 10;
 // you can log multiple values at once like this
 
 
+
 var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
+
 
 var fight =function(enemyName) {
     while(enemyHealth > 0) {
@@ -70,6 +72,8 @@ else {
 
 }
 
-for(var i =0; i<enemyNames.length; i++) {
-    fight(enemyNames[i]);
+for (var i = 0; i <enemyNames.length; i++) {
+    var pickedEnemyName = enemyNames[i];
+    enemyHealth=50;
+    fight(pickedEnemyName);
 }
